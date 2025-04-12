@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+
+
+}
+section{
+    position: relative;
+    width: 90%;
+    left: 50px;
+    color: #fff;
+    padding: 20px;
+    top: 50px;
+
+}
+
+.container{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    top: 60px;
+    padding: 10px;
+    left: 100px;
+  
+    
+}
+.list{
+    position: fixed;
+    display: flex;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    justify-content: space-around;
+
+
+    height: 100vh;
+  width: 50px;
+
+  display: flex;
+}
+.list a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transition: color 0.3s;
+}
+.list a:hover{
+    text-decoration: underline;
+    font-weight:bolder;
+    font-style: italic;
+    font-size: 20px;
+}
+.row{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    left: 50px;
+
+}
+.row h1{
+    position: relative;
+    bottom: 20px;
+    font-size: 40px;
+}
+.name span{
+    font-size: 25px;
+    text-align: justify;
+    top: 10px;
+
+    position: relative;
+
+}
+.image{
+  
+    padding: 5px;
+    align-items: center;
+
+    float: right;
+    
+}
+.image img{
+    position: relative;
+    height: 50vh;
+
+}
+.image :hover{
+    border-radius: 10%;
+
+}
+button{
+    padding: 20px;
+    color: #fff;
+    background: #373636;
+    font-size: 1.4em;
+    position: relative;
+    top: 50px;
+    width: 300px;
+}
+
+button:hover{
+    color: #000;
+    background: orange;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(-5px);
+  
+}
+.name p{
+    color: #ffff;
+    font-size: 20px;
+   
+}
+.name{
+    text-align: center;
+}
+.name h1{
+    
+    display: block;
+    top: 10px;
+    left: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align:justify
+   
+}
+
+.note{
+    position: relative;
+    text-align: justify;
+    width: 100%;
+    top: 30px;
+    padding: 10px;
+}
