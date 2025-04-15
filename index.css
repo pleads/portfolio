@@ -145,3 +145,64 @@ button:hover{
     top: 30px;
     padding: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .row, .image {
+      width: 90%;
+      margin-bottom: 50px;
+      border: 1px solid green;
+    }
+  
+    .image img {
+      max-width: 70%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p, button {
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 10px 20px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .container {
+      padding: 10px;
+    }
+    button{
+      padding: 5px 10px;
+      width: 100px;
+      
+
+    }
+      
+  }
+  @media screen and (max-width:375px){
+    .container{
+      padding: 15px;
+      
+    }
+    button{
+      width: 190px;
+    }
+  }
+  
+  
