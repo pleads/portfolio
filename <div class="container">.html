@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: red;
+      padding: 1rem 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar a {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 1001;
+      display: none;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 60px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .main img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+        width: 100px;
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        height: 60px;
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .sidebar a {
+        writing-mode: horizontal-tb;
+        transform: rotate(0);
+      }
+
+      .main {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 1rem;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger">&#9776;</button>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#skills">Skill</a>
+    <a href="#blog">Blog</a>
+    <a href="#projects">Project</a>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main">
+    <h1>WELCOME</h1>
+    <h2>Aina Oluwapelumi</h2>
+    <p>|| Front-End Developer ||</p>
+    <p style="max-width: 600px; margin-top: 1rem;">
+      I am a frontend developer with expertise in building responsive, user-friendly web interfaces.
+      I specialize in HTML, CSS, JavaScript, and modern frameworks like React.
+    </p>
+    <button class="btn">View my Profile</button>
+    <img src="your-image.jpg" alt="Profile Picture">
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

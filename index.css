@@ -17,6 +17,7 @@ section{
     color: #fff;
     padding: 20px;
     top: 50px;
+    display: flex;
 
 }
 
@@ -28,34 +29,38 @@ section{
     display: flex;
     top: 60px;
     padding: 10px;
+    
     left: 100px;
   
-    
 }
-.list{
-    position: fixed;
-    display: flex;
-    left: 0;
-    align-items: center;
-    flex-direction: column;
-    top: 0;
-    justify-content: space-around;
-
-
-    height: 100vh;
-  width: 50px;
-
+ul{
+  list-style: none;
+  position: fixed;
   display: flex;
+  left: 0;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  justify-content: space-around;
+  height: 100vh;
+  width: 50px;
+  display: flex;
+ 
+ 
+  
+ 
 }
-.list a{
+
+ul a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     transition: color 0.3s;
+    text-decoration: none;
 }
-.list a:hover{
+ a:hover{
     text-decoration: underline;
     font-weight:bolder;
     font-style: italic;
@@ -74,6 +79,11 @@ section{
     position: relative;
     bottom: 20px;
     font-size: 40px;
+    bottom: 100px;
+}
+.row h2{
+  position: relative;
+  color: #ddd32d;
 }
 .name span{
     font-size: 25px;
@@ -87,8 +97,8 @@ section{
   
     padding: 5px;
     align-items: center;
-
     float: right;
+
     
 }
 .image img{
@@ -106,7 +116,7 @@ button{
     background: #373636;
     font-size: 1.4em;
     position: relative;
-    top: 50px;
+    top: 60px;
     width: 300px;
 }
 
@@ -126,15 +136,19 @@ button:hover{
 }
 .name{
     text-align: center;
+    float: left;
+    left: -100px;
+    position: relative;
+
 }
 .name h1{
     
     display: block;
-    top: 10px;
-    left: 50px;
+    top: 5px;
+   
     font-weight: bold;
     font-size: 40px;
-    text-align:justify
+    text-align:center
    
 }
 
@@ -144,23 +158,62 @@ button:hover{
     width: 100%;
     top: 30px;
     padding: 10px;
-}
 
+  
+}
+.menu{
+  position: relative;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  right: -30px;
+
+}
+.hidden {
+  display: none;
+}
 @media screen and (max-width: 768px) {
     .container {
       flex-direction: column;
       text-align: center;
+    
     }
   
     .row, .image {
       width: 90%;
-      margin-bottom: 50px;
-      border: 1px solid green;
+      bottom: 70px;
+     
+    
     }
   
     .image img {
-      max-width: 70%;
+      max-width: 60%;
+      height: 250px;
+      top: 10px;
+      align-items: center;
+ 
     }
+    button{
+      width: 200px;
+      bottom: 100px;
+    
+    }
+    .note{
+      left: -10px;
+      font-size: 2px;
+      
+  
+    }
+  }
+  @media screen and (max-width:1024px) {
+    .container{
+      padding: 20px;
+    }
+    h1{
+
+    }
+    
   }
   @media screen and (max-width: 480px) {
     .container {
@@ -175,12 +228,20 @@ button:hover{
       font-size: 20px;
     }
   
-    p, button {
+     button {
       font-size: 16px;
+      bottom: 30px;
+      background: green;
     }
-  
+    image{
+      bottom: 30px;
+    }
     button {
       padding: 10px 20px;
+    }
+    .note{
+
+
     }
   }
   @media screen and (max-width: 320px) {
@@ -190,7 +251,6 @@ button:hover{
     button{
       padding: 5px 10px;
       width: 100px;
-      
 
     }
       

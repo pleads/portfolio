@@ -160,8 +160,11 @@ button{
     top: 30px;
     right: 50px;
     width: 460px;
+    
+
 
 }
+
 @media screen  and (max-width: 768px) {
     .container{
         flex-direction: column;
@@ -180,14 +183,53 @@ button{
 }
 @media screen and (max-width: 480px) {
     .container{
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
     }
+    
     h1{
         font-size: 20px;
-        left:  20px;
+        left:  -5px;
+        
         
     }
     p, button {
         font-size: 16px;
+       
       }
+    button{
+        padding: 10px, 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container{
+       
+        align-items: center;
+        padding: 10px;
+
+    }
+    .row{
+        width: 100%;
+        border: 1px solid red;
+        padding: 10px;
+        background: blue;
+
+    }
+    h1{
+        font-size: 18px;
+
+    }
+    .note{
+        border: 1px solid green;
+      
+        left: -10px;
+        bottom: 20px;
+        top: 20px;
+    }
+    p{
+        font-size: 12px;
+        left: -10px;
+    }
+    
 }

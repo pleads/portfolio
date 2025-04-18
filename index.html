@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <section>
+        <div class="hidden">
+            <span class="menu">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
         <div class="container">
             <div class="row">
-
-                <div class="list">
-
-                    <a href="index.html">About</a>
-                        <a href="/pages/contact.html">Contact</a>
-                       <a href="#">Skill</a>
-                        <a href="#">Blog</a>
-                        <a href="#">project</a>
-
                     
-                </div>
-                <h1 data-aos="fade-left" data-aos-duration="1500">WELCOME</h1>
+                
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="/pages/contact.html">Contact</a></li>
+                            <li> <a href="#">Skill</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li> <a href="#">project</a></li>
+                        </ul>
+                    
+                        
+                
+
+                
                 <div class="name">
 
-                    
+                    <h1 data-aos="fade-left" data-aos-duration="1500">WELCOME</h1>
 
-                 <h1 data-aos="fade-right" data-aos-duration="1500">Aina Oluwapelumi </h1>
+                 <h2 data-aos="fade-right" data-aos-duration="1500">Aina Oluwapelumi </h2>
 
                  <span data-aos="fade-left" data-aos-duration="1500">|| Front-End Developer ||</span> 
 
@@ -43,13 +53,14 @@
  
                  <button data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="200"> View my Profile</button>
              </div>
+           
             </div>
-            
             <div class="image">
                 <img src="images/pic.jpeg" alt="" data-aos="fade-up" data-aos-duration="1500">
             </div>
             
         </div>
+
     </section>
     <script src="index.js"></script>
 

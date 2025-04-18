@@ -1,0 +1,106 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background: red;
+  padding: 1rem;
+  writing-mode: vertical-rl;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 2rem 0;
+}
+
+/* Main content */
+.content {
+  margin-left: 80px; /* space for sidebar */
+  padding: 2rem;
+  width: 100%;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.intro .text {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.intro .image {
+  flex: 1 1 40%;
+  padding: 1rem;
+}
+
+.intro img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    writing-mode: horizontal-tb;
+    height: auto;
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro .text,
+  .intro .image {
+    flex: 1 1 100%;
+  }
+}
+
+/* Media Query for Phones */
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar li {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+}
